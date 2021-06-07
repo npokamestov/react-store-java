@@ -36,7 +36,6 @@ public class RecordStoreController {
         return record;
     }
 
-//    .../records?artist=Billy+Joel
     @RequestMapping(value = "/records", method = RequestMethod.GET)
     @ResponseStatus(value = HttpStatus.OK)
     public List<Record> getAllRecords(@RequestParam(required = false) String artist, @RequestParam(required = false) String year) {
